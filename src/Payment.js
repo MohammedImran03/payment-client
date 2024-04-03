@@ -1,16 +1,15 @@
 import React from 'react'
 import './App.css';
-import { useParams } from 'react-router-dom';
-
+import { useLocation } from 'react-router-dom';
 
 const Payment = () => {
-
-  const queryParams = new URLSearchParams(window.location.search);
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
 
   // Get the individual query parameters
-  const userId = queryParams.get('user_id');
-  const amount = queryParams.get('amount');
-  const productId = queryParams.get('product_id');
+  const userId = params.get('user_id');
+  const amount = params.get('amount');
+  const productId = params.get('product_id');
 
 
   return (

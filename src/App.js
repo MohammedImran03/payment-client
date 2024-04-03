@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-     <Route path="/home/:data" element={<Payment />} />
+     <Route path="/:data" element={<Payment />} />
      {/* <Route path="/editor" element={<Editor />} /> */}
      </Routes>
     </BrowserRouter>
