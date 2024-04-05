@@ -126,7 +126,7 @@ const HandlePayment=async()=>{
 <div>Course Fee : {courseData.c_fee}</div>
       </div> }
       </div>
-{success ? <div className='text-white text-sm font-bold'>You can Go back and Enjioy Course Now.</div> : 
+{success ? <div className='text-white text-sm font-bold'>You can Go back and start your Course Now.</div> : 
 <button onClick={HandlePayment} className='cursor-pointer text-white bg-blue-600 rounded-md px-4 py-2 mt-2 text-md font-semibold'>Buy Course Rs.{courseData ? courseData.c_fee : ''}</button>}
 </div>
 
